@@ -1,0 +1,13 @@
+digraph "Release-iphonesimulator" {
+  compound=true
+  node [ fontsize="10", fontname="Helvetica"];
+  edge [ labelfontsize="10", labelfontname="Helvetica"];
+  subgraph clusterdir_4fef79e7177ba769987a8da36c892c5f {
+    graph [ bgcolor="#ddddee", pencolor="black", label="build" fontname="Helvetica", fontsize="10", URL="dir_4fef79e7177ba769987a8da36c892c5f.html"]
+  subgraph clusterdir_9edbd518fd16704186dd41bdb45ee343 {
+    graph [ bgcolor="#eeeeff", pencolor="black", label="" URL="dir_9edbd518fd16704186dd41bdb45ee343.html"];
+    dir_9edbd518fd16704186dd41bdb45ee343 [shape=plaintext label="Release-iphonesimulator"];
+    dir_818cd8fdf75ce6bdfca519ab172cce24 [shape=box label="NabuOpenSDK.framework" color="red" fillcolor="white" style="filled" URL="dir_818cd8fdf75ce6bdfca519ab172cce24.html"];
+  }
+  }
+}
