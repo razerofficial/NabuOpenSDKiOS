@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['validateurlresponse_3awithblock_3a',['validateURLResponse:withBlock:',['../interface_nabu_data_manager.html#a0a066fb15be5089675be0cbcaba3a9b8',1,'NabuDataManager']]],
-  ['validateurlresponse_3awithcompletion_3a',['validateURLResponse:withCompletion:',['../interface_nabu_data_manager.html#aba85d467b8bfee9673d200b7139560dc',1,'NabuDataManager']]]
+  ['refreshavailablebands',['refreshAvailableBands',['../interface_nabu_band_manager.html#afd9de75ceab6180803d9912c1ebd2e7a',1,'NabuBandManager']]],
+  ['refreshavailablebandswithidentifiers_3a',['refreshAvailableBandsWithIdentifiers:',['../interface_nabu_band_manager.html#aba77344f337c0656bf3caee78670d096',1,'NabuBandManager']]]
 ];

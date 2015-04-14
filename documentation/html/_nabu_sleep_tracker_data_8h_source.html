@@ -34,7 +34,7 @@
    <div id="projectname">Razer Nabu Open SDK
    &#160;<span id="projectnumber">0.3.0</span>
    </div>
-   <div id="projectbrief">The Razer Nabu Open SDK, or Open SDK, allows access to fitness data, fitness history data, sleep data and user profile from the Razer Server. Aside from these, the Open SDK allows you to send custom notifications from your app to the band.</div>
+   <div id="projectbrief">The Razer Nabu Open SDK, or Open SDK, allows access to fitness data, fitness history data, sleep data and user profile from our Razer server. Aside from these, the Open SDK allows you to send custom notification from your app to the band.</div>
   </td>
  </tr>
  </tbody>
@@ -118,53 +118,54 @@ $(document).ready(function(){initNavTree('_nabu_sleep_tracker_data_8h_source.htm
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="interface_nabu_sleep_tracker.html">   21</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_sleep_tracker.html">NabuSleepTracker</a> : NSObject</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">@property</span> (copy, nonatomic) NSMutableArray *sleepDataArray;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">@property</span> (copy, nonatomic) NSMutableArray *sleepHistoryDataArray;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="interface_nabu_sleep_tracker_data.html">   35</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_sleep_tracker_data.html">NabuSleepTrackerData</a> : NSObject</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bandId;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *modelName;</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_nabu_sleep_tracker.html">   20</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_sleep_tracker.html">NabuSleepTracker</a> : NSObject</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">@property</span> (copy, nonatomic) NSMutableArray *sleepDataArray;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">@property</span> (copy, nonatomic) NSMutableArray *sleepHistoryDataArray;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="interface_nabu_sleep_tracker_data.html">   38</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_sleep_tracker_data.html">NabuSleepTrackerData</a> : NSObject</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">double</span> startTime;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">double</span> endTime;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bandId;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *modelName;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *sleepData;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *sleepDataInMinutes;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">double</span> startTime;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">double</span> endTime;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *sleepData;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *sleepDataInMinutes;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="interface_nabu_sleep_history_data.html">   57</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_sleep_history_data.html">NabuSleepHistoryData</a> : NSObject</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bandId;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *modelName;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">double</span> numOfDays;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">double</span> sleepHistoryRecordDate;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *efficiency;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *good;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bad;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="interface_nabu_sleep_history_data.html">   65</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_sleep_history_data.html">NabuSleepHistoryData</a> : NSObject</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bandId;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *modelName;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="interface_nabu_sleep_tracker_html"><div class="ttname"><a href="interface_nabu_sleep_tracker.html">NabuSleepTracker</a></div><div class="ttdef"><b>Definition:</b> NabuSleepTrackerData.h:21</div></div>
-<div class="ttc" id="interface_nabu_sleep_tracker_data_html"><div class="ttname"><a href="interface_nabu_sleep_tracker_data.html">NabuSleepTrackerData</a></div><div class="ttdef"><b>Definition:</b> NabuSleepTrackerData.h:35</div></div>
-<div class="ttc" id="interface_nabu_sleep_history_data_html"><div class="ttname"><a href="interface_nabu_sleep_history_data.html">NabuSleepHistoryData</a></div><div class="ttdef"><b>Definition:</b> NabuSleepTrackerData.h:57</div></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">double</span> numOfDays;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">@property</span> (nonatomic) <span class="keywordtype">double</span> sleepHistoryRecordDate;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *efficiency DEPRECATED_MSG_ATTRIBUTE(<span class="stringliteral">&quot;Will be removed in future version. - use sleepEfficiency&quot;</span>);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *good DEPRECATED_MSG_ATTRIBUTE(<span class="stringliteral">&quot;Will be removed in future version. - use deepSleep&quot;</span>);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bad DEPRECATED_MSG_ATTRIBUTE(<span class="stringliteral">&quot;Will be removed in future version. - use lightSleep&quot;</span>);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">@property</span> (nonatomic) NSInteger deepSleep;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">@property</span> (nonatomic) NSInteger lightSleep;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">@property</span> (nonatomic) NSInteger sleepEfficiency;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_nabu_sleep_tracker_html"><div class="ttname"><a href="interface_nabu_sleep_tracker.html">NabuSleepTracker</a></div><div class="ttdef"><b>Definition:</b> NabuSleepTrackerData.h:20</div></div>
+<div class="ttc" id="interface_nabu_sleep_tracker_data_html"><div class="ttname"><a href="interface_nabu_sleep_tracker_data.html">NabuSleepTrackerData</a></div><div class="ttdef"><b>Definition:</b> NabuSleepTrackerData.h:38</div></div>
+<div class="ttc" id="interface_nabu_sleep_history_data_html"><div class="ttname"><a href="interface_nabu_sleep_history_data.html">NabuSleepHistoryData</a></div><div class="ttdef"><b>Definition:</b> NabuSleepTrackerData.h:65</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_9edbd518fd16704186dd41bdb45ee343.html">Release-iphonesimulator</a></li><li class="navelem"><a class="el" href="dir_818cd8fdf75ce6bdfca519ab172cce24.html">NabuOpenSDK.framework</a></li><li class="navelem"><a class="el" href="dir_e36f92cecbaf583510e8f2e68a1fdfd1.html">Headers</a></li><li class="navelem"><b>NabuSleepTrackerData.h</b></li>
-    <li class="footer">Generated on Wed Apr 8 2015 15:29:48 for Razer Nabu Open SDK by
+    <li class="navelem"><a class="el" href="dir_1fdfa3b15f7646de2b0fa588d58d5744.html">NabuOpenSDKiOS</a></li><li class="navelem"><a class="el" href="dir_48a67a1bbc14ea0241c7ccf5440f75b3.html">NabuOpenSDK.framework</a></li><li class="navelem"><a class="el" href="dir_f06439136bdf04531ace7efd63cdb415.html">Headers</a></li><li class="navelem"><b>NabuSleepTrackerData.h</b></li>
+    <li class="footer">Generated on Tue Apr 14 2015 14:37:57 for Razer Nabu Open SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

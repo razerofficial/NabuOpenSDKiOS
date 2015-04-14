@@ -11,11 +11,11 @@
 /*!
  @class NabuFitness
  @abstract A class that defines a list of Nabu fitness data within a specified time
- @discussion
-    startTime   - start time of list of fitness data in Unix timestamp
-    endTime     - end time of list of fitness data in Unix timestamp
-    fitnessData - list of fitness data
- @updated 2014-03-11
+    @discussion
+        @param  startTime       Start time of list of fitness data in Unix timestamp (Epoch Time)
+        @param  endTime         End time of list of fitness data in Unix timestamp (Epoch Time)
+        @param  fitnessData     List of fitness data
+        @param  fitnessHistoryData  List of historical fitness data
  */
 
 @interface NabuFitness : NSObject
@@ -27,13 +27,15 @@
 
 /*!
  @class NabuFitnessData
- @abstract  A class that defines the Nabu Fitness Data
- @discussion
-    calories        - calories spent on fitness activity
-    distanceWalked  - distance walked on fitness activity
-    floorClimbed    - floor climbed on fitness activity
-    steps           - steps taken on fitness activity
- @updated 2014-03-11
+ @abstract  A class that defines Nabu Fitness Data
+    @discussion
+        @param bandId      Nabu Device ID
+        @param modelName   Nabu Device Type
+        @param recordTime  Timestamp of fitness data (start date of data)
+        @param calories        Calories spent on fitness activity
+        @param distanceWalked  Distance walked on fitness activity
+        @param floorClimbed    Floor climbed on fitness activity
+        @param steps           Steps taken on fitness activity
  */
 
 @interface NabuFitnessData : NSObject
@@ -54,13 +56,15 @@
 
 /*!
  @class NabuFitnessHistoryData
- @abstract  A class that defines the Nabu Fitness History Data
- @discussion
-    calories        - calories spent on fitness activity
-    distanceWalked  - distance walked on fitness activity
-    floorClimbed    - floor climbed on fitness activity
-    steps           - steps taken on fitness activity
- @updated 2014-03-11
+ @abstract  A class that defines Nabu Fitness History Data
+    @discussion
+        @param bandId      Nabu Device ID
+        @param modelName   Nabu Device Type
+        @param recordTime  Timestamp of fitness data (start date of data)
+        @param calories        Calories spent on fitness activity
+        @param distanceWalked  Distance walked on fitness activity
+        @param floorClimbed    Floor climbed on fitness activity
+        @param steps           Steps taken on fitness activity
  */
 
 @interface NabuFitnessHistoryData : NSObject

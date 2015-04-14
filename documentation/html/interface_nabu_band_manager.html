@@ -34,7 +34,7 @@
    <div id="projectname">Razer Nabu Open SDK
    &#160;<span id="projectnumber">0.3.0</span>
    </div>
-   <div id="projectbrief">The Razer Nabu Open SDK, or Open SDK, allows access to fitness data, fitness history data, sleep data and user profile from the Razer Server. Aside from these, the Open SDK allows you to send custom notifications from your app to the band.</div>
+   <div id="projectbrief">The Razer Nabu Open SDK, or Open SDK, allows access to fitness data, fitness history data, sleep data and user profile from our Razer server. Aside from these, the Open SDK allows you to send custom notification from your app to the band.</div>
   </td>
  </tr>
  </tbody>
@@ -127,17 +127,14 @@ Inheritance diagram for NabuBandManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
-<tr class="memitem:afd9de75ceab6180803d9912c1ebd2e7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd9de75ceab6180803d9912c1ebd2e7a"></a>
-(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>refreshAvailableBands</b></td></tr>
+<tr class="memitem:afd9de75ceab6180803d9912c1ebd2e7a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_nabu_band_manager.html#afd9de75ceab6180803d9912c1ebd2e7a">refreshAvailableBands</a></td></tr>
 <tr class="separator:afd9de75ceab6180803d9912c1ebd2e7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba77344f337c0656bf3caee78670d096"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba77344f337c0656bf3caee78670d096"></a>
-(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>refreshAvailableBandsWithIdentifiers:</b></td></tr>
+<tr class="memitem:aba77344f337c0656bf3caee78670d096"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_nabu_band_manager.html#aba77344f337c0656bf3caee78670d096">refreshAvailableBandsWithIdentifiers:</a></td></tr>
 <tr class="separator:aba77344f337c0656bf3caee78670d096"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
-<tr class="memitem:a59ed1f869ca93bbd1cc43044d5d2fdc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59ed1f869ca93bbd1cc43044d5d2fdc9"></a>
-(<a class="el" href="interface_nabu_band_manager.html">NabuBandManager</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <b>sharedInstance</b></td></tr>
+<tr class="memitem:a59ed1f869ca93bbd1cc43044d5d2fdc9"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_nabu_band_manager.html">NabuBandManager</a> *)&#160;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_nabu_band_manager.html#a59ed1f869ca93bbd1cc43044d5d2fdc9">sharedInstance</a></td></tr>
 <tr class="separator:a59ed1f869ca93bbd1cc43044d5d2fdc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
@@ -146,13 +143,64 @@ Properties</h2></td></tr>
 NSArray *&#160;</td><td class="memItemRight" valign="bottom"><b>availableBands</b></td></tr>
 <tr class="separator:a7ff3fdb1bbe02b4afeb258a1a582a388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class that defines the <a class="el" href="class_nabu.html">Nabu</a> Band Manager. The <a class="el" href="class_nabu.html">Nabu</a> Band Manager is the core object that interacts and manages the <a class="el" href="class_nabu.html">Nabu</a> band devices.  </p><pre class="fragment">@param  availableBands   Array of Available Nabu Bands</pre> </div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="afd9de75ceab6180803d9912c1ebd2e7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) refreshAvailableBands </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Refresh the current list of available bands. </p>
+
+</div>
+</div>
+<a class="anchor" id="aba77344f337c0656bf3caee78670d096"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) refreshAvailableBandsWithIdentifiers: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>identifiers</em></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Refresh status for a subset of available bands with an array of given band identifiers. </p>
+
+</div>
+</div>
+<a class="anchor" id="a59ed1f869ca93bbd1cc43044d5d2fdc9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">+ (<a class="el" href="interface_nabu_band_manager.html">NabuBandManager</a> *) sharedInstance </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Singleton object for <a class="el" href="class_nabu.html">Nabu</a> Band Manager </p>
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_nabu_band_manager.html">NabuBandManager</a></li>
-    <li class="footer">Generated on Wed Apr 8 2015 15:29:49 for Razer Nabu Open SDK by
+    <li class="footer">Generated on Tue Apr 14 2015 14:37:58 for Razer Nabu Open SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

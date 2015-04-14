@@ -10,18 +10,17 @@
 
 /*!
  @class NabuUserProfile
- @abstract  A class that defines the Nabu user profile
- @discussion
-    nickName    - user nickname
-    avatar      - user avatar image
-    birthDay    - user birth day
-    birthMonth  - user birth month
-    birthYear   - user birth year
-    gender      - user gender
-    height      - user height
-    weight      - user weight
-    unit        - user unit of measurement for height and weight
- @updated 2014-03-11
+ @abstract  A class that defines a Nabu User Profile
+    @discussion
+        @param  nickName    User's nickname
+        @param  avatar      User's avatar image
+        @param  birthDay    User's birth day
+        @param  birthMonth  User's birth month
+        @param  birthYear   User's birth year
+        @param  gender      User's gender
+        @param  height      User's height
+        @param  weight      User's weight
+        @param  unit        Unit of measurement for user's height and weight
  */
 
 @interface NabuUserProfile : NSObject

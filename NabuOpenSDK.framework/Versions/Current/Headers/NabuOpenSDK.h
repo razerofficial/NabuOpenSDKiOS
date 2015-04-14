@@ -11,6 +11,7 @@
 
 #import <NabuOpenSDK/NabuOpenSDKConstants.h>
 #import <NabuOpenSDK/NabuSleepTrackerData.h>
+#import <NabuOpenSDK/NabuClipboardManager.h>
 #import <NabuOpenSDK/NabuNotification.h>
 #import <NabuOpenSDK/NabuFitnessData.h>
 #import <NabuOpenSDK/NabuUserProfile.h>

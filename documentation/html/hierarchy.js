@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "Nabu", "class_nabu.html", null ],
     [ "NSObject", null, [
       [ "NabuBand", "interface_nabu_band.html", null ],
       [ "NabuBandData", "interface_nabu_band_data.html", null ],

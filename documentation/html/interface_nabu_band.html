@@ -34,7 +34,7 @@
    <div id="projectname">Razer Nabu Open SDK
    &#160;<span id="projectnumber">0.3.0</span>
    </div>
-   <div id="projectbrief">The Razer Nabu Open SDK, or Open SDK, allows access to fitness data, fitness history data, sleep data and user profile from the Razer Server. Aside from these, the Open SDK allows you to send custom notifications from your app to the band.</div>
+   <div id="projectbrief">The Razer Nabu Open SDK, or Open SDK, allows access to fitness data, fitness history data, sleep data and user profile from our Razer server. Aside from these, the Open SDK allows you to send custom notification from your app to the band.</div>
   </td>
  </tr>
  </tbody>
@@ -130,10 +130,12 @@ Instance Methods</h2></td></tr>
 (void)&#160;</td><td class="memItemRight" valign="bottom">- <b>connect</b></td></tr>
 <tr class="separator:acc1413acbc2adeaae33f48fdca4c06d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1fc4a8ca5571e48af57a9603be493259"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1fc4a8ca5571e48af57a9603be493259"></a>
-(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>setFitnessEnabled:</b></td></tr>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_nabu_band.html#a1fc4a8ca5571e48af57a9603be493259">setFitnessEnabled:</a></td></tr>
+<tr class="memdesc:a1fc4a8ca5571e48af57a9603be493259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Establish connection with <a class="el" href="class_nabu.html">Nabu</a> Band. Connection state is managed via delegate. <br /></td></tr>
 <tr class="separator:a1fc4a8ca5571e48af57a9603be493259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af2cde997f7ea95823c320be58ab10781"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2cde997f7ea95823c320be58ab10781"></a>
-(void)&#160;</td><td class="memItemRight" valign="bottom">- <b>getLastConnectionTimestampWithBlock:</b></td></tr>
+(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_nabu_band.html#af2cde997f7ea95823c320be58ab10781">getLastConnectionTimestampWithBlock:</a></td></tr>
+<tr class="memdesc:af2cde997f7ea95823c320be58ab10781"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable or Disable Fitness tracking on <a class="el" href="class_nabu.html">Nabu</a> Band. <br /></td></tr>
 <tr class="separator:af2cde997f7ea95823c320be58ab10781"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f412ddf769826a9ca887d51993bb9a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f412ddf769826a9ca887d51993bb9a4"></a>
 (void)&#160;</td><td class="memItemRight" valign="bottom">- <b>setGoalSteps:distance:calories:sleep:</b></td></tr>
@@ -160,13 +162,17 @@ BOOL&#160;</td><td class="memItemRight" valign="bottom"><b>connected</b></td></t
 id&lt; <a class="el" href="protocol_nabu_band_delegate-p.html">NabuBandDelegate</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
 <tr class="separator:a7c389173559eaf3c0d5df6756419ab52"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class that defines the data for a <a class="el" href="class_nabu.html">Nabu</a> Band  </p><pre class="fragment">@param  name   Name of Nabu Band.
+@param  uuid   Get Nabu Band UUID.
+@param  connected   Check status of Nabu Band Connection.
+@param  &lt;NabuBandDelegate&gt;delegate  Nabu Band delegate object.</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_nabu_band.html">NabuBand</a></li>
-    <li class="footer">Generated on Wed Apr 8 2015 15:29:48 for Razer Nabu Open SDK by
+    <li class="footer">Generated on Tue Apr 14 2015 14:37:57 for Razer Nabu Open SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

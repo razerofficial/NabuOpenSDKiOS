@@ -34,7 +34,7 @@
    <div id="projectname">Razer Nabu Open SDK
    &#160;<span id="projectnumber">0.3.0</span>
    </div>
-   <div id="projectbrief">The Razer Nabu Open SDK, or Open SDK, allows access to fitness data, fitness history data, sleep data and user profile from the Razer Server. Aside from these, the Open SDK allows you to send custom notifications from your app to the band.</div>
+   <div id="projectbrief">The Razer Nabu Open SDK, or Open SDK, allows access to fitness data, fitness history data, sleep data and user profile from our Razer server. Aside from these, the Open SDK allows you to send custom notification from your app to the band.</div>
   </td>
  </tr>
  </tbody>
@@ -118,69 +118,68 @@ $(document).ready(function(){initNavTree('_nabu_data_8h_source.html','');});
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="interface_nabu_live_fitness_data.html">   11</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_live_fitness_data.html">NabuLiveFitnessData</a> : NSObject</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">@property</span> (nonatomic) uint32_t steps;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">@property</span> (nonatomic) uint32_t distance;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">@property</span> (nonatomic) uint32_t calories;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">@property</span> (nonatomic) uint32_t activeMinutes;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_nabu_live_fitness.html">   20</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_live_fitness.html">NabuLiveFitness</a> : NSObject</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bandName;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="interface_nabu_live_fitness_data.html">NabuLiveFitnessData</a> *totalFitness;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="interface_nabu_live_fitness_data.html">   21</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_live_fitness_data.html">NabuLiveFitnessData</a> : NSObject</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">@property</span> (nonatomic) uint32_t steps;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">@property</span> (nonatomic) uint32_t distance;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">@property</span> (nonatomic) uint32_t calories;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">@property</span> (nonatomic) uint32_t activeMinutes;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="interface_nabu_interval_fitness_data.html">   28</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_interval_fitness_data.html">NabuIntervalFitnessData</a> : NSObject</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">@end</span></div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">@property</span> (nonatomic) NSInteger timestamp;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">@property</span> (nonatomic) uint16_t steps;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">@property</span> (nonatomic) uint16_t distance;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">@property</span> (nonatomic) uint16_t calories;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">@property</span> (nonatomic) uint16_t floors;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div>
-<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="interface_nabu_interval_fitness.html">   38</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_interval_fitness.html">NabuIntervalFitness</a> : NSObject</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bandName;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="interface_nabu_interval_fitness_data.html">NabuIntervalFitnessData</a> *intervalFitness;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="interface_nabu_live_fitness.html">   39</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_live_fitness.html">NabuLiveFitness</a> : NSObject</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bandName;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="interface_nabu_live_fitness_data.html">NabuLiveFitnessData</a> *totalFitness;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">@end</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="interface_nabu_live_sleep_data.html">   46</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_live_sleep_data.html">NabuLiveSleepData</a> : NSObject</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">@property</span> (nonatomic) NSInteger startTimestamp;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">@property</span> (nonatomic) NSInteger endTimestamp;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">@property</span> (nonatomic) NSData *sleepData;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="interface_nabu_live_sleep.html">   55</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_live_sleep.html">NabuLiveSleep</a> : NSObject</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bandName;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="interface_nabu_live_sleep_data.html">NabuLiveSleepData</a> *sleep;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="interface_nabu_live_fitness_html"><div class="ttname"><a href="interface_nabu_live_fitness.html">NabuLiveFitness</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:20</div></div>
-<div class="ttc" id="interface_nabu_live_fitness_data_html"><div class="ttname"><a href="interface_nabu_live_fitness_data.html">NabuLiveFitnessData</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:11</div></div>
-<div class="ttc" id="interface_nabu_live_sleep_html"><div class="ttname"><a href="interface_nabu_live_sleep.html">NabuLiveSleep</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:55</div></div>
-<div class="ttc" id="interface_nabu_interval_fitness_html"><div class="ttname"><a href="interface_nabu_interval_fitness.html">NabuIntervalFitness</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:38</div></div>
-<div class="ttc" id="interface_nabu_live_sleep_data_html"><div class="ttname"><a href="interface_nabu_live_sleep_data.html">NabuLiveSleepData</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:46</div></div>
-<div class="ttc" id="interface_nabu_interval_fitness_data_html"><div class="ttname"><a href="interface_nabu_interval_fitness_data.html">NabuIntervalFitnessData</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:28</div></div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="interface_nabu_interval_fitness_data.html">   56</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_interval_fitness_data.html">NabuIntervalFitnessData</a> : NSObject</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">@property</span> (nonatomic) NSInteger timestamp;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">@property</span> (nonatomic) uint16_t steps;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">@property</span> (nonatomic) uint16_t distance;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">@property</span> (nonatomic) uint16_t calories;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keyword">@property</span> (nonatomic) uint16_t floors;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="interface_nabu_interval_fitness.html">   74</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_interval_fitness.html">NabuIntervalFitness</a> : NSObject</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bandName;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="interface_nabu_interval_fitness_data.html">NabuIntervalFitnessData</a> *intervalFitness;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="interface_nabu_live_sleep_data.html">   91</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_live_sleep_data.html">NabuLiveSleepData</a> : NSObject</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">@property</span> (nonatomic) NSInteger startTimestamp;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">@property</span> (nonatomic) NSInteger endTimestamp;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">@property</span> (nonatomic) NSData *sleepData;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="interface_nabu_live_sleep.html">  108</a></span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_nabu_live_sleep.html">NabuLiveSleep</a> : NSObject</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;<span class="keyword">@property</span> (nonatomic) NSString *bandName;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">@property</span> (nonatomic) <a class="code" href="interface_nabu_live_sleep_data.html">NabuLiveSleepData</a> *sleep;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_nabu_live_fitness_html"><div class="ttname"><a href="interface_nabu_live_fitness.html">NabuLiveFitness</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:39</div></div>
+<div class="ttc" id="interface_nabu_live_fitness_data_html"><div class="ttname"><a href="interface_nabu_live_fitness_data.html">NabuLiveFitnessData</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:21</div></div>
+<div class="ttc" id="interface_nabu_live_sleep_html"><div class="ttname"><a href="interface_nabu_live_sleep.html">NabuLiveSleep</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:108</div></div>
+<div class="ttc" id="interface_nabu_interval_fitness_html"><div class="ttname"><a href="interface_nabu_interval_fitness.html">NabuIntervalFitness</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:74</div></div>
+<div class="ttc" id="interface_nabu_live_sleep_data_html"><div class="ttname"><a href="interface_nabu_live_sleep_data.html">NabuLiveSleepData</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:91</div></div>
+<div class="ttc" id="interface_nabu_interval_fitness_data_html"><div class="ttname"><a href="interface_nabu_interval_fitness_data.html">NabuIntervalFitnessData</a></div><div class="ttdef"><b>Definition:</b> NabuData.h:56</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="dir_4fef79e7177ba769987a8da36c892c5f.html">build</a></li><li class="navelem"><a class="el" href="dir_9edbd518fd16704186dd41bdb45ee343.html">Release-iphonesimulator</a></li><li class="navelem"><a class="el" href="dir_818cd8fdf75ce6bdfca519ab172cce24.html">NabuOpenSDK.framework</a></li><li class="navelem"><a class="el" href="dir_e36f92cecbaf583510e8f2e68a1fdfd1.html">Headers</a></li><li class="navelem"><b>NabuData.h</b></li>
-    <li class="footer">Generated on Wed Apr 8 2015 15:29:48 for Razer Nabu Open SDK by
+    <li class="navelem"><a class="el" href="dir_1fdfa3b15f7646de2b0fa588d58d5744.html">NabuOpenSDKiOS</a></li><li class="navelem"><a class="el" href="dir_48a67a1bbc14ea0241c7ccf5440f75b3.html">NabuOpenSDK.framework</a></li><li class="navelem"><a class="el" href="dir_f06439136bdf04531ace7efd63cdb415.html">Headers</a></li><li class="navelem"><b>NabuData.h</b></li>
+    <li class="footer">Generated on Tue Apr 14 2015 14:37:57 for Razer Nabu Open SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>

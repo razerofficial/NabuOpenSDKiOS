@@ -16,6 +16,7 @@ var searchData=
   ['getfitnesshistoryfornumberofdays_3awithcompletion_3a',['getFitnessHistoryForNumberOfDays:withCompletion:',['../interface_nabu_data_manager.html#a4833d54fc0006af7a5f74ce3616ec0da',1,'NabuDataManager']]],
   ['gethandshakedatawithstarttime_3aendtime_3awithcompletion_3a',['getHandshakeDataWithStartTime:endTime:withCompletion:',['../interface_nabu_data_manager.html#a9a8267217fc0c6bcb9da26a54a81e581',1,'NabuDataManager']]],
   ['gethifivedatawithstarttime_3aendtime_3awithblock_3a',['getHiFiveDataWithStartTime:endTime:withBlock:',['../interface_nabu_data_manager.html#a63af681022c9229d95f59efaddcef5ca',1,'NabuDataManager']]],
+  ['getlastconnectiontimestampwithblock_3a',['getLastConnectionTimestampWithBlock:',['../interface_nabu_band.html#af2cde997f7ea95823c320be58ab10781',1,'NabuBand']]],
   ['getmyclipboardwithblock_3a',['getMyClipboardWithBlock:',['../interface_nabu_data_manager.html#aa8ecc127af471e2b8e7140ea7f33b708',1,'NabuDataManager']]],
   ['getnabubandlistwithcompletion_3a',['getNabuBandListWithCompletion:',['../interface_nabu_data_manager.html#a88fc740111002dced930718d909dabc3',1,'NabuDataManager']]],
   ['getpulsedatawithstarttime_3aendtime_3awithblock_3a',['getPulseDataWithStartTime:endTime:withBlock:',['../interface_nabu_data_manager.html#a4d3e3ed35acb4d4f3a64c8beef6347e6',1,'NabuDataManager']]],

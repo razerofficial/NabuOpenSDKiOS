@@ -8,6 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+/*!
+ @class NabuBandData
+ @abstract  A class that defines a Nabu Band
+    @discussion
+        @param name            Device Name
+        @param model           Model of Nabu Device
+        @param bandId          ID of the Nabu Band
+        @param serialNumber    Serial Number of the Nabu Band
+ */
+
 @interface NabuBandData : NSObject
 
 @property (copy, nonatomic) NSString *name;

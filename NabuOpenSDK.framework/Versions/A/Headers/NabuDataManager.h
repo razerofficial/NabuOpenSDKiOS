@@ -19,7 +19,7 @@ typedef void(^NabuCompletionBlock)(NSDictionary *)DEPRECATED_MSG_ATTRIBUTE("No l
 
 
 /**
- *  Class that defines the Nabu Data Manager
+ *  The NabuDataManager class is responsible for all interactions between the NabuSDK and the NabuAPI.
  */
 @interface NabuDataManager : NSObject
 

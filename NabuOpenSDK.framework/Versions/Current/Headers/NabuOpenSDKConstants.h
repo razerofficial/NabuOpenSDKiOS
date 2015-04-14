@@ -8,7 +8,7 @@
 #ifndef NabuOpenSDKConstants_Header_h
 #define NabuOpenSDKConstants_Header_h
 
-typedef enum : NSUInteger {
+typedef enum {
     kAuthenticationStatusFailure = 0,
     kAuthenticationStatusSuccess = 1,
     kAuthenticationStatusPermissionDeined = 9999

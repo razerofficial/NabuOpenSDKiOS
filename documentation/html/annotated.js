@@ -1,5 +1,6 @@
 var annotated =
 [
+    [ "Nabu", "class_nabu.html", null ],
     [ "NabuBand", "interface_nabu_band.html", "interface_nabu_band" ],
     [ "NabuBandData", "interface_nabu_band_data.html", "interface_nabu_band_data" ],
     [ "<NabuBandDelegate>", "protocol_nabu_band_delegate-p.html", "protocol_nabu_band_delegate-p" ],

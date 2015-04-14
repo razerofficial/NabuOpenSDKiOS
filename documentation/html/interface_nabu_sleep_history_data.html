@@ -34,7 +34,7 @@
    <div id="projectname">Razer Nabu Open SDK
    &#160;<span id="projectnumber">0.3.0</span>
    </div>
-   <div id="projectbrief">The Razer Nabu Open SDK, or Open SDK, allows access to fitness data, fitness history data, sleep data and user profile from the Razer Server. Aside from these, the Open SDK allows you to send custom notifications from your app to the band.</div>
+   <div id="projectbrief">The Razer Nabu Open SDK, or Open SDK, allows access to fitness data, fitness history data, sleep data and user profile from our Razer server. Aside from these, the Open SDK allows you to send custom notification from your app to the band.</div>
   </td>
  </tr>
  </tbody>
@@ -108,6 +108,7 @@ $(document).ready(function(){initNavTree('interface_nabu_sleep_history_data.html
 
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Instance Methods</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_nabu_sleep_history_data-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -123,6 +124,18 @@ Inheritance diagram for NabuSleepHistoryData:</div>
 </map>
  </div></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Instance Methods</h2></td></tr>
+<tr class="memitem:a54047b5be4fe6cef62fb19570681adc0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54047b5be4fe6cef62fb19570681adc0"></a>
+(NSString *efficiency)&#160;</td><td class="memItemRight" valign="bottom">- <b>DEPRECATED_MSG_ATTRIBUTE</b></td></tr>
+<tr class="separator:a54047b5be4fe6cef62fb19570681adc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f0f764a2973e8fb2388783eef8634dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f0f764a2973e8fb2388783eef8634dc"></a>
+(NSString *good)&#160;</td><td class="memItemRight" valign="bottom">- <b>DEPRECATED_MSG_ATTRIBUTE</b></td></tr>
+<tr class="separator:a0f0f764a2973e8fb2388783eef8634dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20b16c8e648ea641a90dde9cc8f0da5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af20b16c8e648ea641a90dde9cc8f0da5"></a>
+(NSString *bad)&#160;</td><td class="memItemRight" valign="bottom">- <b>DEPRECATED_MSG_ATTRIBUTE</b></td></tr>
+<tr class="separator:af20b16c8e648ea641a90dde9cc8f0da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:aa1f0f40fac43d7c7ef42340fe2e258d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1f0f40fac43d7c7ef42340fe2e258d6"></a>
@@ -137,25 +150,29 @@ double&#160;</td><td class="memItemRight" valign="bottom"><b>numOfDays</b></td><
 <tr class="memitem:a3ea49508b69048154dca5c5a76f9e7ab"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ea49508b69048154dca5c5a76f9e7ab"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>sleepHistoryRecordDate</b></td></tr>
 <tr class="separator:a3ea49508b69048154dca5c5a76f9e7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefd2a249756b9c8256d37192b2ed7df6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefd2a249756b9c8256d37192b2ed7df6"></a>
-NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>efficiency</b></td></tr>
-<tr class="separator:aefd2a249756b9c8256d37192b2ed7df6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e81e930aa2782afb865a8062c4ce87d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e81e930aa2782afb865a8062c4ce87d"></a>
-NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>good</b></td></tr>
-<tr class="separator:a0e81e930aa2782afb865a8062c4ce87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa95675b71d116c1b3d4c2e5d514aef4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa95675b71d116c1b3d4c2e5d514aef4"></a>
-NSString *&#160;</td><td class="memItemRight" valign="bottom"><b>bad</b></td></tr>
-<tr class="separator:afa95675b71d116c1b3d4c2e5d514aef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0178aa72495a0eb7acb9e828c4693c13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0178aa72495a0eb7acb9e828c4693c13"></a>
+NSInteger&#160;</td><td class="memItemRight" valign="bottom"><b>deepSleep</b></td></tr>
+<tr class="separator:a0178aa72495a0eb7acb9e828c4693c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae25cc8d7f1af0c99b9bc55edc215bc27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae25cc8d7f1af0c99b9bc55edc215bc27"></a>
+NSInteger&#160;</td><td class="memItemRight" valign="bottom"><b>lightSleep</b></td></tr>
+<tr class="separator:ae25cc8d7f1af0c99b9bc55edc215bc27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf01e090c0ea367f87295edd17d6b4e6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf01e090c0ea367f87295edd17d6b4e6"></a>
+NSInteger&#160;</td><td class="memItemRight" valign="bottom"><b>sleepEfficiency</b></td></tr>
+<tr class="separator:acf01e090c0ea367f87295edd17d6b4e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A class that defines the Nabu Sleep History Data   2014-03-11 </p>
-</div></div><!-- contents -->
+<div class="textblock"><p>A class that defines the <a class="el" href="class_nabu.html">Nabu</a> Sleep History Data  </p><pre class="fragment">@param bandId      Nabu Device ID
+@param modelName   Nabu Device Type
+@param sleepHistoryRecordDate  Timestamp of sleep data (start date of data)
+@param deepSleep   Deep sleep in minutes
+@param lightSleep  Light sleep in minutes
+@param sleepEfficiency  Sleep efficiency in a percentage</pre> </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="interface_nabu_sleep_history_data.html">NabuSleepHistoryData</a></li>
-    <li class="footer">Generated on Wed Apr 8 2015 15:29:49 for Razer Nabu Open SDK by
+    <li class="footer">Generated on Tue Apr 14 2015 14:37:58 for Razer Nabu Open SDK by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.9.1 </li>
   </ul>
